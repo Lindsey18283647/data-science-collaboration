@@ -449,3 +449,11 @@ if __name__ == "__main__":
     print("- save_config/load_config: Configuration management")
     print("- log_experiment: Experiment tracking")
     print("- generate_model_report: Model performance reporting")
+
+def calculate_statistics(data):
+    """Calculate basic statistics for dataset."""
+    return {
+        'mean': data.mean(),
+        'std': data.std(),
+        'count': len(data)
+    }
